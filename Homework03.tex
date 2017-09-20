@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage{pictex,graphicx,amsmath,amssymb,amsbsy,amsfonts,amsthm,verbatim}
+\usepackage{graphics}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{algorithm,algorithmic}
+\usepackage{multirow}
+\setlength{\voffset}{-0,25in}
+\setlength{\headsep}{+0,5in}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\newcounter{problem}
+\newcommand{\problem}{\textbf{\refstepcounter{problem}Problem \theproblem} }
+
+\def\vu{\mathbf{u}}
+\def\vs{\mathbf{x}}
+\def\vb{\mathbf{b}}
+\def\vv{\mathbf{v}}
+\def\vw{\mathbf{w}}
+\renewcommand{\implies}{\rightarrow}
+\renewcommand{\lor}{\vee}
+\renewcommand{\land}{wedge}
+\renewcommand{\iff}{\lefftrightarrow}
+\newcommand{\xor}{\oplus}
+\newcommand{\TRUE}{\mathbf{T}}
+\newcommand{\FALSE}{\mathbf{F}}
+\newcommand{\universe}{\mathcal{U}}
+
+\begin{document}
+\pagestyle{fancyplain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chead{DICRETE STRUCTURE (CO1007) --- Homework 03 --- PROOF}
+\textit{\textbf}{\underline{Instruction:}} Type your answer to the following questions provided by Latex and submit a zipped file ( included .pdf file and .tex file) to E-learning by group (only 4-5 member in each group). Only team leader will submit it. One page per problem. Please use the solution template provided)
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|}
+     \hline
+      \multicolumn{4}{|c|}{\textbf{GROUP ... ----MEMBER LIST}}\\
+      \hline
+      \textbf{No.} &\qquad\qquad \textbf{Name}\qquad\qquad\qquad & \qquad\qquad{ID}\qquad\qquad & \qquad{Role}\qquad\qquad \\
+      \hline
+        1 & Pham Minh Tuan & 1752595 & \\
+      \hline
+\end{tabular}
+\end{center}
+\bigbreak
+\problem [10pt] Prove that by instruction that $1^2$ + $2^2$ + ... + $n^2$ = $\dfrac{n \times (n+1) \times (2n+1)}{6}$\\
+\textbf{Solution:}\\
+\textbf{Basic step:}\\
+for n = 3; P(n): $1^{2} + 2^{2} + 3^{2}$ = $\dfrac{3 \times (3+1) \times (2 \times 3 + 1)}{6}$ = 14\\
+$\rightarrow P(n) is true  for n =3$\\
+\textbf{Inductive step:}\\
+\begin{enumerate}
+%1
+\item n = k; P(k)\\
+$1^2 + 2^2 + ... + k^2 = \dfrac{k \times (k+1) \times (2k+1)}{6}$\\
+%2
+\item n = k+1; P(k+1)\\
+$1^2 + 2^2 + 3^2 + k^2 + (k+1)^2 = \dfrac {(k+1) \times (k+2) \times (2k+3)}{6}$\\
+$\leftrightarrow \dfrac{k \times (k+1) \times (2k+1)}{6} + (k+1)^2 = \dfrac{(k+1) \times (k+2) \times (2k+3)}{6}$\\
+$\leftrightarrow k \times (k+1) \times (2k +1) + 6 \times (k+1)^{2} = (k+1) \times (k+2) \times (2k+3)$\\
+$\leftrightarrow k \times (2k+1) + 6 \times (k+1) = (k+1) \times (2k+1)$\\ 
+$\rightarrow P(k+1) is true$\\
+$\rightarrow Q.E.D.$
+ 
+\end{enumerate}
+\end{document}
