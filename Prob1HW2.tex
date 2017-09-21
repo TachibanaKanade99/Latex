@@ -1,0 +1,197 @@
+\documentclass[10pt]{article}
+\usepackage{pictex,graphicx,amsmath,amssymb,amssymb,amsbsy,amsfonts,amsthm,verbatim}
+\usepackage{graphics}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{algorithm,algorithmic}
+\usepackage{multirow}
+\setlength{\voffset}{-0,25in}
+\setlength{\headsep}{+0,5in}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\newcounter{problem}
+\newcommand{\problem}{\textbf{\refstepcounter{problem}Problem \theproblem.} }
+
+\def\vu{\mathbf{u}}
+\def\vx{\mathbf{x}}
+\def\vb{\mathbf{b}}
+\def\vv{\mathbf{v}}
+\def\vw{\mathbf{w}}
+\renewcommand{\implies}{\rightarrow}
+\renewcommand{\lor}{\vee}
+\renewcommand{\land}{\wedge}
+\renewcommand{\iff}{\leffrightarrow}
+\newcommand{\xor}{\oplus}
+\newcommand{\TRUE}{\mathbf{T}}
+\newcommand{\FALSE}{\mathbf{F}}
+\newcommand{\universe}{\mathcal{U}}
+
+\begin{document}
+\pagestyle{fancyplain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chead{DISCRETE STRUCTURE (CO1007) --- SOLUTION to Homework 02 --- PREDICATE LOGIC \& PROOF}
+%chead{DICRETE STRUCTURE (CC1007) --- Homework 02 --- PREDICATE LOGIC \& PROOF}
+\textit{\textbf{\underline{Instruction:}} Type your answers to the following questions provided by LaTeX and submit a zipped file (included .pdf and .tex files) to E-learning by group (only 4-5 members in each group). Only team leader will submit it. One page per problem. Please use the solution template provided.}
+
+
+\begin{center}
+   \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{\textbf{GROUP ... ----MEMBER LIST}}\\
+      \hline 
+      \textbf{No.}  &\qquad\qquad \textbf{Name}\qquad\qquad\qquad & \qquad\textbf{ID}\qquad\qquad & \qquad\textbf{Role}\qquad\qquad \\
+      \hline
+       1 & Pham Minh Tuan & 1752595 & \\
+      \hline
+\end{tabular}
+\end{center}
+\bigbreak
+\problem [10pts] Let $F(x,y)$ be the statement "x can fool y", where the domain cosists of all the people to the world. Use the quanlifier to express each of these statements.
+\bigbreak 
+\textit{Solution:}
+\begin{enumerate}
+
+%1
+
+\item   $ \forall x F(x,Fred)$
+
+%2
+
+\item   $ \forall x F(Evelyn,x)$
+
+%3
+
+\item   $ \forall x \exists y F(x,y)$
+
+%4
+
+\item   $ \forall x \forall y \neg(F(y,x))$
+
+%5
+
+\item   $ \forall x \exists y F(y,x)$
+
+%6
+
+\item   $ \forall x \neg(F(x, $Fred$ \land $Jerry$))$
+
+%7
+
+\item   $ \forall x \exists y F(x,y)$
+
+%8
+
+\item   $ \forall x \neg(F(x,$himself$ \lor $herself$)$
+
+%9 
+ 
+\item   $ \exists x F(x,$himself$ \lor $herself$)$
+\end{enumerate}
+
+\clearpage
+\problem [15pts] Use rules of inference to show that if
+    $\forall x (P(x) \lor Q(x)),$
+    $\forall x (\neg Q(x) \lor S(x)),$
+    $\forall x (R(x) \implies \neg S(x)) and$
+    $\forall x \neg P(x)$
+    are true, then
+    $\exists x \neg R(x)$
+    is true. \\
+\textit{Solution:}
+\begin{enumerate}
+%1
+\item $\exists x \neg (P(x))$ is true $\therefore P(x)$ is false
+%2
+\item $\forall x (P(x) \lor Q(x)),$ is true $\therefore Q(x)$ is true $\rightarrow \neg Q(x)$ is false
+%3
+\item $\forall x (\neg Q(x) \lor S(x)),$ is true $\therefore S(x)$ is true $\rightarrow \neg S(x)$ is false
+%4
+\item $\forall x (R(x) \implies \neg S(x))$ is true $\therefore R(x)$ is false
+%5
+\item $\rightarrow \neg R(x)$ is true
+\end{enumerate}
+ 
+\clearpage
+\problem [10pt] Let L(x,y) be the statement x loves y, where the domain for both x and y consist of all people in the world. Translate the follwing predicate logic into English:
+\begin{enumerate}
+%1
+  \item All people in the world love Jerry
+%2
+  \item All people in the world love somebody
+%3
+  \item Somebody loves all people in the world
+%4
+  \item Lydia doesn't love somebody
+%5
+  \item All people in the world doesn't love somebody
+%6
+  \item Y and Z all love only Y
+\end{enumerate}   
+  
+\clearpage
+\underline Problem 6 [15pts] Express each of the statements using quantifiers. Then form the negation of the statement so that no negation is to the left of a quanlifier. Next, express the negation in simple English.
+\begin{enumerate}
+%1
+\item All dogs have fleas 
+%2
+\item There is a horse thet can add
+%3
+\item Every koala can climb
+%4
+\item No monkey can speak French
+%5
+\item There exist a pig that can swim and catch fish
+
+\textit{Solution:}
+
+%1
+\item We write this statement as $\forall x (D(x) \implies F(x)$) or $\forall x (\neg D(x) \lor F(x)$). Its negation is $\exists x (D(x) \land \neg F(x)$), and in English it translates into "There is a dog that doesn't have fleas".
+%2
+\item We write this statement as $\exists x (H(x) \implies A(x)$) or $\exists x (\neg H(x) \lor A(x)$). Its negation is $\forall x (H(x) \land \neg A(x)$), and in English it translates into " All (horses can't add"
+%3 
+\item We write this statement as $\forall x (K(x) \implies C(x)$) or $\forall x (\neg K(x) \lor C(x)$). Its negation is $\exists x (K(x) \land \neg C(x)$), and in English it translates into " There is a koala that can climb"
+%4
+\item We write this statement as $\forall x (\neg M(x) \land F(x)$). Its negation is $\exists x (M(x) \lor \neg F(x)$), and in English it translates into " All monkey speak French"
+%5
+\item We write this statement as $\exists x ( P(x) \implies S(x) \land P(x) \implies C(x)$) or $\exists x (\neg P(x) \lor S(x) \land \neg P(x) \lor C(x)$). Its negation is $\forall x (P(x) \land \neg S(x) and P(x) \land \neg C(x)$), and in English it translates into " All pigs that can't swim and can't catch fish"
+\end{enumerate}     
+\end{document}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
