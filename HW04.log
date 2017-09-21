@@ -1,0 +1,329 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.2)  21 SEP 2017 15:01
+entering extended mode
+**./HW04.tex
+(HW04.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\pictex\pictex.sty"
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\pictex\prepictex.tex")
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\pictex\pictex.tex")
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\pictex\postpictex.tex")
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\pictex\picmore.tex")
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\ltxmisc\piccorr.sty"))
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count103
+))
+\Gin@req@height=\dimen269
+\Gin@req@width=\dimen270
+) ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen271
+))
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen272
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count104
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count105
+\leftroot@=\count106
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count107
+\DOTSCASE@=\count108
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen273
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
+\dotsspace@=\muskip10
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
+\tag@help=\toks19
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
+\andhelp@=\toks20
+\eqnshift@=\dimen274
+\alignsep@=\dimen275
+\tagshift@=\dimen276
+\tagwidth@=\dimen277
+\totwidth@=\dimen278
+\lineht@=\dimen279
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks28
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
+\verbatim@in@stream=\read1
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\preprint\fullpage.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip49
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count116
+\float@exts=\toks31
+\float@box=\box34
+\@float@everytoks=\toks32
+\@floatcapt=\box35
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks33
+\c@algorithm=\count117
+)
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\algorithms\algorithmic.sty
+"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count118
+\c@ALC@line=\count119
+\c@ALC@rem=\count120
+\c@ALC@depth=\count121
+\ALC@tlm=\skip59
+\algorithmicindent=\skip60
+) ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip61
+\multirow@cntb=\count122
+\multirow@dima=\skip62
+\bigstrutjot=\dimen280
+)
+\c@problem=\count123
+(HW04.aux)
+\openout1 = `HW04.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count124
+\scratchdimen=\dimen281
+\scratchbox=\box36
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen282
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks35
+) ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\pdftexcmds.st
+y"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+ ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\oberdiek\epstopdf-base.s
+ty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\kvdefinekeys.st
+y"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+)) ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+ ("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+
+("D:\Tuan Minh\Cau truc roi rac KHMT\Latex\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{C:/Users/DELL/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+] [2]
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+[4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+[5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+[6
+
+] (HW04.aux) ) 
+Here is how much of TeX's memory you used:
+ 3567 strings out of 493323
+ 46404 string characters out of 3133467
+ 120088 words of memory out of 3000000
+ 7037 multiletter control sequences out of 15000+200000
+ 6705 words of font info for 26 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,10n,43p,401b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Tuan Minh/Cau truc roi rac KHMT/Latex/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><D:/Tuan Minh/Cau truc roi rac KHMT/Latex/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><D:/Tuan Minh/Cau truc roi rac KHMT/Latex/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><D:/Tuan Minh/Cau truc roi rac KHMT/Latex/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><D:/Tuan Minh/Cau truc roi rac KHMT/Latex/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><D:/Tuan Minh/Cau truc roi rac KHMT/Latex/f
+onts/type1/public/amsfonts/symbols/msam10.pfb><D:/Tuan Minh/Cau truc roi rac KH
+MT/Latex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on HW04.pdf (6 pages, 87500 bytes).
+PDF statistics:
+ 49 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
