@@ -1,0 +1,188 @@
+\documentclass[10pt]{article}
+\usepackage{pictex,graphicx,amsmath,amssymb,amsbsy,amsfonts,amsthm,verbatim}
+\usepackage{graphics}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{algorithm,algorithmic}
+\usepackage{multirow}
+\setlength{\voffset}{-0,25in}
+\setlength{\headsep}{+0,5in}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\newcounter{problem}
+\newcommand{\problem}{\textbf{\refstepcounter{problem}Problem \theproblem} }
+
+\def\vu{\mathbf{u}}
+\def\vs{\mathbf{x}}
+\def\vb{\mathbf{b}}
+\def\vv{mathbf{v}}
+\def\vw{\mathbf{w}}
+\renewcommand{\implies}{\rightarrow}
+\renewcommand{\lor}{\vee}
+\renewcommand{\land}{wedge}
+\renewcommand{\iff}{\leffrightarrow}
+\newcommand{\xor}{\oplus}
+\newcommand{\TRUE}{\mathbf{T}}
+\newcommand{\FALSE}{\mathbf{F}}
+\newcommand{\universe}{\mathcal{U}}
+
+\begin{document}
+\pagestyle{fancyplain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chead{DICRETE STRUCTURE (CC007) --- HOMEWORK 04 --- SET \& FUNCTION}
+\textit{\textbf}{\underline{Instruction:}} Type your answer to the following quetion provided by Latex and submit a zipped file (included .pdf file and .tex file) to E-learning by group (only 4-5 member in each group). Only team leader will submit it. One page per problem. Please use the solution template provided)
+
+\begin{center}
+ \begin{tabular}{|c|c|c|c|}
+  \hline
+  \multicolumn{4}{|c|}{\textbf{GROUP ... ----MEMBER LIST}}\\
+  \hline
+  \textbf{No.} &\qquad\qquad \textbf{Name}\qquad\qquad\qquad & \qquad\qquad{ID} \qquad\qquad & \qquad{Role} \qquad\qquad \\
+   \hline
+   1 & Pham Minh Tuan & 1752595 & \\
+   \hline
+\end{tabular}
+\end{center}
+
+\problem [5pt] Prove the following statements
+\begin{enumerate}
+%1
+\item $\overline{A \cap B \cap C} = \overline{A} \cup \overline{B} \cup \overline{C}$\\
+ \textbf{1)}Suppose that:$ x \in \overline{A \cap B \cap C}$\\
+\qquad\qquad $\leftrightarrow x \in \overline{A} \cap x \in \overline{B} \cap x \in \overline{C}$\\
+\qquad\qquad $\leftrightarrow x \notin A \cap x \notin B \cap x \notin C$\\
+\qquad\qquad $\leftrightarrow x \in \neg{A \cap B \cap C}$\\
+\qquad\qquad $\leftrightarrow x \in (\overline{A} \cup \overline{B} \cup \overline{C})$\\
+$\rightarrow Q.E.D$\\
+\textbf{2)} Membership Table:
+\begin{center}
+   \begin{tabular}{|c|c|c|c|c|}
+   \hline
+   \textbf{A} & \textbf{B} & \textbf{C} & \qquad \textbf{$\overline{A \cap B \cap C}$} &\qquad \textbf{$\overline{A} \cup \overline{B} \cup \overline{C}$}\\
+    \hline
+    1 & 1 & 1 & 0 & 0\\
+    0 & 0 & 0 &1 & 1\\
+    0 & 1 & 1 & 0 & 0\\
+    0 & 1 & 0 & 0 & 0\\
+    1 & 0 & 0 & 0 & 0\\
+    1 & 0 & 1 & 0 & 0\\
+    0 & 0 & 1 & 0 & 0\\
+    1 & 1 & 0 & 0 & 0\\
+     \hline
+    \end{tabular}
+\end{center}
+%2
+\item $P(A) \subseteq P(B)  \mbox{ if and only if} A \subseteq B$\\
+Suppose that $A \nsubseteq B \mbox{ and}  A \in P(A), B \in P(B)$\\
+$\rightarrow P(A) \nsubseteq P(B) \mbox{so if} A \subseteq B \mbox{then} P(A) \subseteq P(B)$
+%3
+\item $(B - A) \cup (C -A) = (B \cup C) - A$\\
+Suppose that:
+A= $\left\{1,2,3\right\}$\\
+B= $\left\{3,4,5\right\}$\\
+C= $\left\{2,7,8\right\}$\\
+We have: B - A = $\left\{4,5\right\}$\\ 
+              C - A = $\left\{7,8\right\}$\\
+$\rightarrow (B - A) \cup (C - A) = \left\{4,5,7,8\right\}$ (1)\\
+We have: $B \cup C = \left\{2,3,4,5,7,8\right\}$\\
+$\rightarrow (B \cup C) - A = \left\{4,5,7,8\right\}$ (2)\\
+From (1), (2) $\rightarrow Q.E.D$         
+%4
+\item $\mbox{Explain why } A \times B \times C \mbox{ and }  (A \times B) \times C \mbox{ are not the same.}$\\
+Suppose that:\\
+A= $\left\{1\right\}$\\
+B= $\left\{3,4\right\}$\\
+C= $\left\{5,6\right\}$\\ 
+We have $A \times B \times C = \left\{(1,3,5),(1,3,6),(1,4,5),(1,4,6)\right\}$ (1) \\
+We also have $(A \times B) = \left\{(1,3),(1,4)\right\}$\\
+$\rightarrow (A \times B) \times C = \left\{(1,5),(1,6),(3,5),(3,6),(4,5),(4,6)\right\}$ (2) \\
+$\therefore \mbox{ (1) and (2) are different }$\\
+$\rightarrow Q.E.D$
+\end{enumerate}
+\clearpage
+\problem [5pt] The symmetric differrence of A and B, denoted by $A \oplus B$, is the set containing those elements in either A or B, but not in both A and B.
+\begin{enumerate}
+%1
+\item $ \mbox{ Show that} A \oplus B = (A \cup B)(A \cap B)$\\
+We define that $A \oplus B =(A - B) \cup (B - A)$\\
+Suppose that:\\
+A= $\left\{1,2,3\right\}$\\
+B= $\left\{3,4,5\right\}$\\
+We have: A - B =$\left\{1,2\right\}$\\
+              B - A =$\left\{4,5\right\}$\\
+$\rightarrow (A - B) \cup (B - A) = \left\{1,2,4,5\right\}$ (1) \\
+Beside:$(A \cup B)(A \cap B) = \left\{1,2,4,5\right\}$ (2) \\
+$(1) \& (2) \therefore  A \oplus B = (A \cup B)(A \cap B)$
+%2
+\item $ \mbox{ What can you say about the sets A and B if} A \oplus B = A?$\\
+A is the set and B is the empty set or B is the set and A is the empty set\\
+Definitely: $A \oplus B = (A - B) \cup (B - A)$\\
+So if $B = \emptyset \mbox{ then } A - B = A - \emptyset = A$\\
+       $B - A = \emptyset - A = \emptyset $\\
+$\rightarrow (A - B) \cup (B - A) = A \cup \emptyset = A$\\
+$\therefore Q.E.D$
+%3 
+\item $ \mbox{ If A, B, C are sets, does it follow that} A \oplus (B \oplus C) = (A \oplus B) \oplus C?$\\
+Use Membership Table:
+\begin{center}
+   \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    A B C & \quad $B \oplus C$ & \quad $A \oplus B$ & \quad $A \oplus (B \oplus C)$ & \quad $(A \oplus B) \oplus C$\\
+     \hline
+     1 1 1 & 0 & 0 & 1 &1\\
+     1 1 0 & 1 & 0 & 0 &0\\
+     1 0 1 & 1 & 1 & 0 &0\\
+     1 0 0 & 0 & 1 & 1 &1\\
+     0 1 1 & 0 & 1 & 0 &0\\
+     0 1 0 & 1 & 1 & 1 &1\\
+     0 0 1 & 1 & 0 & 1 &1\\
+     0 0 0 & 0 & 0 & 0 &0\\
+     \hline
+    \end{tabular}
+\end{center}
+\end{enumerate}
+\clearpage
+\problem [5pt] What can you say about the sets A and B if we know that 
+\begin{enumerate}
+%1
+\item $A \cup B = A?$
+%2
+\item $A \cap B = A?$
+%3
+\item $A - B = A?$
+%4
+\item $A \cap B = B \cap A?$
+%5
+\item $A - B = B - A?$\\
+\textbf{Solution:}
+\end{enumerate}
+\clearpage
+\problem [5pt] Find the domain and range of these functions. Note that in each case, find the domain, determine the set of set of elements assigned values by the function.
+\begin{enumerate}
+%1
+\item The function that assigns to each bit string the number of ones in the string mins the number of zeros in the string
+%2
+\item The function that assigns to each bit string twice the number of zeros in the string.
+%3
+\item The function that assigns the number of bits left over when a bit string is split into bytes (which are blocks of 8 bits)
+%4
+\item The function that assigns tp each possitve integer the largest perfect square not exceeding this integer\\
+\textbf{Solution:}
+\end{enumerate}
+\clearpage
+\problem [5pt] Determine whether each of these functions is a bijection from \textbf{R} to \textbf{R}
+\begin{enumerate}
+%1
+\item f(x) = -3x +4
+%2
+\item f(x) = -3$x^{2}$ +7
+%3
+\item f(x) = $\dfrac{x +1}{x +2}$
+%4
+\item f(x) = $x^{5} + 1$
+%5
+\item f(x) = $\dfrac{x^{5} +1}{x^{2} +2}$\\
+\textbf{Solution:}    
+\end{enumerate}
+\end{document}
