@@ -1,0 +1,148 @@
+\documentclass[10pt]{article}
+\usepackage{pictex,graphicx,amsmath,amssymb,amsbsy,amsfonts,amsthm,verbatim}
+\usepackage{graphics}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{algorithm,algorithmic}
+\usepackage{multirow}
+\setlength{\voffset}{-0,25in}
+\setlength{\headsep}{+0,5in}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\newcounter{problem}
+\newcommand{\problem}{\textbf{\refstepcounter{problem}Problem \theproblem} }
+
+\def\vu{\mathbf{u}}
+\def\vs{\mathbf{x}}
+\def\vb{\mathbf{b}}
+\def\vv{\mathbf{v}}
+\def\vw{\mathbf{w}}
+\renewcommand{\implies}{\rightarrow}
+\renewcommand{\lor}{\vee}
+\renewcommand{\land}{wedge}
+\renewcommand{\iff}{\lefftrightarrow}
+\newcommand{\xor}{\oplus}
+\newcommand{\TRUE}{\mathbf{T}}
+\newcommand{\FALSE}{\mathbf{F}}
+\newcommand{\universe}{\mathcal{U}}
+
+\begin{document}
+\pagestyle{fancyplain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chead{DICRETE STRUCTURE (CO1007) --- Homework 03 --- PROOF}
+\textit{\textbf}{\underline{Instruction:}} Type your answer to the following questions provided by Latex and submit a zipped file ( included .pdf file and .tex file) to E-learning by group (only 4-5 member in each group). Only team leader will submit it. One page per problem. Please use the solution template provided)
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|}
+     \hline
+      \multicolumn{4}{|c|}{\textbf{GROUP ... ----MEMBER LIST}}\\
+      \hline
+      \textbf{No.} &\qquad\qquad \textbf{Name}\qquad\qquad\qquad & \qquad\qquad{ID}\qquad\qquad & \qquad{Role}\qquad\qquad \\
+      \hline
+        1 & Pham Minh Tuan & 1752595 & \\
+      \hline
+\end{tabular}
+\end{center}
+\bigbreak
+\problem Show that: P(n)
+       1+2+3+ .... + n = $\dfrac{n \times (n+1)}{2}$
+\bigbreak
+\textit{Solution:}\\
+\textbf{Basic step:} $With n = 1 \rightarrow P(1) is true$\\ 
+\textbf{Inductive step:}\\ 
+     As n = k, P(k) = 1+2+3+ ...+k = $\dfrac{k \times (k+1)}{2}$
+\bigbreak
+     As n = k+1, P(k+1) = 1+2+3+ ... + (k+1) =  $\dfrac{(k+1) \times ((k+1)+1)}{2}$\\
+     $\rightarrow P(k+1) is true$\\
+     $\rightarrow P(k) is true$\\
+     $\therefore P(n) is true$
+\clearpage
+\problem Prove that P(n): $3^{2n-1}$ + 1 \vdots 4 for all $n \ge 1$
+\bigbreak
+\textbf{Basic step:}
+\bigbreak
+$3^{1 \times 2 -1}$ + 1 = 4 \vdots 4 (n =1)
+\bigbreak
+\textbf{Inductive step:}
+\bigbreak
+\begin{enumerate}
+%1
+\item n = k :\\	
+    $3^{2k -1}$ +1 $\vdots 4$ \\
+ %2
+\item n = k +1 :\\
+    $3^{2k + 1} +1 \vdots 4$ \\
+$\leftrightarrow 3^{2k -1 +2} +1 \vdots 4$ \\
+$\leftrightarrow 3^{2} \times 3^{2k - 1} +1 -3^{2} +3^{2} \vdots 4$\\
+$\leftrightarrow 3^{2} \times (3^{2k -1} + 1) + (-8) \vdots 4$\\
+     $\rightarrow P(k+1) \vdots 4 $\\
+     $\rightarrow P(k) \vdots 4$\\
+     $\therefore P(n) \vdots 4$
+\end{enumerate}
+\clearpage
+\problem Prove that P(n): $6^{n} -1 \vdots 5, \forall n \ge 1$
+\bigbreak
+\textbf{Solution:}
+\bigbreak
+\textbf{Basic step}\\
+    $6^{1} - 1 \vdots 5$ (for n=1)\\
+\textbf{Inductive step}
+\begin{enumerate}
+%1 
+\item n = k\\
+    $6^{k} - 1 \vdots 5$\\
+%2
+\item n = k+1\\
+    $6^{k +1} - 1 \vdots 5$\\
+$\leftrightarrow 6 \times 6^{k} -6 + 6 \vdots 5$\\
+$\leftrightarrow 6 \times (6^{k} -1) + 5 \vdots 5$\\
+     $\rightarrow P(k+1) \vdots 5 $\\
+     $\rightarrow P(k) \vdots 5$\\
+     $\therefore P(n) \vdots 5$
+\end{enumerate}
+\clearpage
+\problem $F_{0}$; $F_{1}$; $F_{n+2}$ = $F_{n}$ + $F_{n+1}$ for $n \ge )$. Prove that $F_{3n}$ is even for $n \ge 1$\\
+\textbf{Solution:}
+\bigbreak
+\textbf{Basic step}\\
+$F_3$ = $F_1$ + $F_2$ = 1 + 1 = 2\\
+$\rightarrow F_3$ is even (n = 1)\\
+\begin{enumerate}
+%1 
+\item n= k\\
+$F_{k+2}$ = $F_{k}$ + $F_{k+1}$\\
+$\rightarrow F_{3k}$ is even
+%2
+\item n = k+1\\
+$F_{3k+3}$ = $F_{3k+1}$ + $F_{3k+2}$\\
+\qquad\qquad =$F_{3k} + 2\times F_{3k+1}$\\
+$\rightarrow F_{3k +3}$ is even\\
+$\therefore F_{3n}$ is even
+\end{enumerate}
+\clearpage
+\problem Show that if n is integer and $n^{3}$ + 2015 is odd, then n is even\\ 
+a) Contraposition:\\
+\textbf{Solution:}\\
+We assume n is odd : n = 2k +1\\
+\qquad\qquad\qquad $n^{3}$ = $(2k +1)^{3}$\\
+We have: 
+   $n^{3}$ + 2015 \\
+ = 8$k^{3}$ + 12$k^{2}$ + 6k + 1 + 2015\\
+ = 8$k^{3}$ + 12$k^{2}$ + 6k + 2016\\ 
+ = $2 \times (4k^{3} + 6k^{2} + 3k + 1008)$\\
+$\rightarrow n^{3} + 2015$ is even\\
+So if $n^{3}$ + 2015 is odd then n is even.
+\clearpage
+\problem Prove that sum of two rational number is a rational number\\
+\textbf{Solution:}\\
+We assume that: $\dfrac{a}{b}$ and $\dfrac{c}{d}$ is two rational number\\
+$\dfrac{a}{b}$ + $\dfrac{c}{d}$ = $\dfrac{ad-bc}{bd}$\\
+As x = $\dfrac{a}{b} and y = \dfrac{c}{d}$\\
+We assume that x + y is rational number
+ $\rightarrow Q.E.D.$
+\end{document}
+
+
+
+
