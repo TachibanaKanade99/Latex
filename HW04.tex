@@ -31,7 +31,7 @@
 \pagestyle{fancyplain}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chead{DICRETE STRUCTURE (CC007) --- HOMEWORK 04 --- SET \& FUNCTION}
-\textit{\textbf}{\underline{Instruction:}} Type your answer to the following quetion provided by Latex and submit a zipped file (included .pdf file and .tex file) to E-learning by group (only 4-5 member in each group). Only team leader will submit it. One page per problem. Please use the solution template provided)
+\textit{\textbf}{\underline{Instruction:}} Type your answer to the following question provided by Latex and submit a zipped file (included .pdf file and .tex file) to E-learning by group (only 4-5 member in each group). Only team leader will submit it. One page per problem. Please use the solution template provided)
 
 \begin{center}
  \begin{tabular}{|c|c|c|c|}
@@ -146,40 +146,92 @@ Use Membership Table:
 \problem [5pt] What can you say about the sets A and B if we know that 
 \begin{enumerate}
 %1
-\item $A \cup B = A?$
+\item $A \cup B = A?$\\
+We assume that B is the empty set\\
+As $B = \emptyset  \mbox{ so } A \cup B = A$ 
 %2
-\item $A \cap B = A?$
+\item $A \cap B = A?$\\
+B can be the subset of A, denoted by $ B \subseteq A$\\
+$\rightarrow A \cap B = A$ 
 %3
-\item $A - B = A?$
+\item $A - B = A?$\\
+B is the empty set or $B \cap A = \emptyset$\\
 %4
-\item $A \cap B = B \cap A?$
+\item $A \cap B = B \cap A?$\\
+when $A \subseteq B \mbox{ and } B \subseteq A$\\
+$\left\{x|x \in A \mbox{ and }x \in B\right\}$
 %5
 \item $A - B = B - A?$\\
+When A = B, as $A \subseteq B \mbox{ and } B \subseteq A$\\
 \end{enumerate}
 \clearpage
 \problem [5pt] Find the domain and range of these functions. Note that in each case, find the domain, determine the set of set of elements assigned values by the function.
 \begin{enumerate}
 %1
-\item The function that assigns to each bit string the number of ones in the string mins the number of zeros in the string
+\item The function that assigns to each bit string the number of ones in the string minus the number of zeros in the string\\
+Domain: The set of all bit strings.\\
+Range:$\mathbb{Z}$
 %2
-\item The function that assigns to each bit string twice the number of zeros in the string.
+\item The function that assigns to each bit string twice the number of zeros in the string.\\
+Domain: The set of all bit strings.\\
+Range:$R = \left\{x,n \in \mathbb{N^{*}}|x = 2n\right\}$\\
 %3
-\item The function that assigns the number of bits left over when a bit string is split into bytes (which are blocks of 8 bits)
+\item The function that assigns the number of bits left over when a bit string is split into bytes (which are blocks of 8 bits)\\
+Domain: The set of bit strings.\\
+Range:$R = \left\{0,1,2,3,4,5,6,7\right\}$\\
 %4
-\item The function that assigns tp each possitve integer the largest perfect square not exceeding this integer\\
+\item The function that assigns to each possitve integer the largest perfect square not exceeding this integer\\
+Domain: The set of positive integer.\\
+Range: $R = \left\{1,4,9,16,25...\right\}$\\
 \end{enumerate}
 \clearpage
 \problem [5pt] Determine whether each of these functions is a bijection from \textbf{R} to \textbf{R}
 \begin{enumerate}
 %1
-\item f(x) = -3x +4
+\item f(x) = -3x + 4.\\
+Suppose that: -3x + 4 = -3y + 4 $\leftrightarrow{-3x = -3y}$ $\leftrightarrow{x = y}$\\
+$\rightarrow{\mbox{ The function is injective }}$\\
+We have: y = -3x +4, so x = $\dfrac{y - 4}{-3}$\\
+$\therefore \exists x = \dfrac{y - 4}{-3}$ that f(x) = y.\\
+$\rightarrow{\mbox{ The function is surjective. }}$\\
+$\therefore{\mbox{ The function is injection. }}$
 %2
-\item f(x) = -3$x^{2}$ +7
+\item f(x) = -3$x^{2}$ +7.\\
+Suppose that: -3$x^{2}$ +7 = -3$y^{2}$ +7 $\leftrightarrow{x^2 = y^2}$ $\leftrightarrow{x = y \mbox{ or } x = -y}$\\
+$\rightarrow{\mbox{ The function is not injective. }}$\\
+$\therefore{\mbox{ The function is not a bijection. }}$\\
 %3
-\item f(x) = $\dfrac{x +1}{x +2}$
+\item f(x) = $\dfrac{x + 1}{x + 2}$\\
+Suppose that: $\dfrac{x + 1}{x + 2} = \dfrac{x +1}{x +2}$\\ 
+$\leftrightarrow{(x + 1)(y +2) = (y + 1)(x + 2)}$\\
+ $\leftrightarrow{xy + x + 2y + 2 = xy + 2x + y + 2}$\\
+  $\leftrightarrow{x = y}$\\
+We have y = $\dfrac{x + 1}{x + 2}$\\
+$\leftrightarrow{y = \dfrac{x + 2- 1}{x + 2}}$\\
+$\leftrightarrow{ y = 1 - \dfrac{1}{x + 2}}$\\
+$\leftrightarrow{ 1 - y = \dfrac{1}{x + 2} }$\\
+$\leftrightarrow{ x + 2 = \dfrac{1}{1 - y}}$\\
+$\leftrightarrow{ x = \dfrac{1}{1 - y} - 2}$\\
+So, $\forall y \exists x = \dfrac{1}{1 - y} - 2$\\
+$\rightarrow{\mbox{ The function is surjective }}$\\
+$\therefore{\mbox{ The function is bijective }}$  
 %4
-\item f(x) = $x^{5} + 1$
+\item f(x) = $x^5 + 1$\\
+Suppose that: $x^5 + 1 = y^5 + 1$\\
+$\leftrightarrow{x^5 = y^5}$\\
+$\therefore{x = y}$\\
+$\rightarrow{\mbox{ The function is injective }}$\\
+We have: $y = x^5 + 1$\\
+$\leftrightarrow{x = \sqrt[5]{y - 1}}$\\
+$\rightarrow \forall y \exists x = \sqrt[5]{y - 1}$\\
+$\rightarrow{\mbox{ The function is surjective }}$\\
+$\therefore{\mbox{ The function is a bijection }}$\\ 
 %5
-\item f(x) = $\dfrac{x^{5} +1}{x^{2} +2}$\\    
+\item f(x) = $\dfrac{x^{5} +1}{x^{2} +2}$\\
+Suppose that: $\dfrac{x^{5} +1}{x^{2} +2} = \dfrac{y^{5} +1}{y^{2} +2}$\\
+$\leftrightarrow{(x^5 + 1)(y^2 +2) = (y^5 + 1)(x^2 + 2)}$\\
+ $\leftrightarrow{x^5y^2 + 2x^5 + y^2 + 2 = y^5x^2 + 2y^5 + x^2 + 2}$\\
+  $\leftrightarrow{x = y}$\\
+We have: y = $\dfrac{x^{5} +1}{x^{2} +2}$     
 \end{enumerate}
 \end{document}
