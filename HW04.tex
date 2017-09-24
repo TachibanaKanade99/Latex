@@ -78,16 +78,13 @@ Suppose that $A \nsubseteq B \mbox{ and}  A \in P(A), B \in P(B)$\\
 $\rightarrow P(A) \nsubseteq P(B) \mbox{so if} A \subseteq B \mbox{then} P(A) \subseteq P(B)$
 %3
 \item $(B - A) \cup (C -A) = (B \cup C) - A$\\
-Suppose that:
-A= $\left\{1,2,3\right\}$\\
-B= $\left\{3,4,5\right\}$\\
-C= $\left\{2,7,8\right\}$\\
-We have: B - A = $\left\{4,5\right\}$\\ 
-              C - A = $\left\{7,8\right\}$\\
-$\rightarrow (B - A) \cup (C - A) = \left\{4,5,7,8\right\}$ (1)\\
-We have: $B \cup C = \left\{2,3,4,5,7,8\right\}$\\
-$\rightarrow (B \cup C) - A = \left\{4,5,7,8\right\}$ (2)\\
-From (1), (2) $\rightarrow Q.E.D$         
+We have:\\
+$(B - A) = B \cap \overline{A}$\\
+$(C - A) = C \cap \overline{A}$\\
+$\rightarrow{(B - A)(C - A) = (B \cap \overline{A})(C \cap \overline{A})}$\\
+$\rightarrow{(B \cup C) \cap \overline{A}}$\\
+$\rightarrow{(B \cup C) - A}$\\
+$\therefore{Q.E.D}$
 %4
 \item $\mbox{Explain why } A \times B \times C \mbox{ and }  (A \times B) \times C \mbox{ are not the same.}$\\
 Suppose that:\\
