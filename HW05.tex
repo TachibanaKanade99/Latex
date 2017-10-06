@@ -1,0 +1,88 @@
+\documentclass[10pt]{article}
+\usepackage{pictex,amsmath,amssymb,amsbsy,amsfonts,amsthm,verbatim}
+\usepackage{graphics}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{algorithm,algorithmic}
+\usepackage{multirow}
+\setlength{\voffset}{-0.25in}
+\setlength{\headsep}{+0.5in}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\newcounter{problem}
+\newcommand{\problem}{\textbf{\refstepcounter{problem}Problem \theproblem}}
+\def\vu{\mathbf{u}}
+\def\vs{\mathbf{x}}
+\def\vb{\mathbf{b}}
+\def\vv{\mathbf{v}}
+\def\vw{\mathbf{w}}
+
+\renewcommand{\implies}{\rightarrow}
+\renewcommand{\lor}{\vee}
+\renewcommand{\land}{wedge}
+\renewcommand{\iff}{\leffrightarrow}
+\newcommand{\xor}{\oplus}
+\newcommand{\TRUE}{\mathbf{T}}
+\newcommand{\FALSE}{\mathbf{F}}
+\newcommand{\universe}{\mathcal{U}}
+
+\begin{document}
+\chead{DIICRETE STRUCTURE (CC1007) --- HOMEWORK 5 ---RELATION \& COUNTING}
+\textit{\textbf{\underline{Instruction:}} Type your answer to the following question provided by LaTex and submit a zipped file (included .pdf file and tex.file) to E-learing by group (only 4-5 member in each group). Only team member will submit it. One page per problem. Please use the solution template provided. Please, summarize the work of each member in percentages.(\%) }
+
+\begin{center}
+ \begin{tabular}{|c|c|c|c|}
+ \hline
+ \multicolumn{4}{|c|}{\textbf{GROUP ... ----MEMBER LIST}}\\
+ \hline
+ \textbf{No.}&\qquad\qquad \textbf{Name}\qquad\qquad\qquad & \qquad\qquad{ID} \qquad\qquad & \qquad{Role}\qquad\qquad \\
+ \hline
+ 1 & Pham Minh Tuan & 1752595 & \\
+ \hline
+ \end{tabular}
+\end{center}
+
+\problem [5pt] Which of these are posets ?
+\begin{itemize}
+\item ($\mathbb{Z},=$)\\
+Equality is reflexive,antisymmetric, and transitive and thus is poset.
+\item($\mathbb{Z},\not =$)\\
+Inequality is not reflexive and thus is not a poset.
+\item($\mathbb{Z},\ge$)\\
+Greater than or equal to is reflexive, antisymmetric, and transitive and thus is a poset.
+\item($\mathbb{Z}, \not | $)\\
+This is not reflexive because any integer will divide itself evenly and thus is not a poset.
+\end{itemize}
+\pagebreak
+\problem [10pts] Let R be the relation on the set  $A = \left\{1,2,3,4,5\right\}$ such that\\
+\begin{center}
+$(a,b)R(c,d) \leftrightarrow{a + b = c + d}$
+\end{center}
+\begin{itemize}
+	\item Is R an equivalent relation?\\
+	For (a,a)R(a,a) $\leftrightarrow{a + a = a + a}$\\
+	$\rightarrow{ \mbox{ R is reflexive }}$; (1)\\
+	For (a,b)R(c,d) $\leftrightarrow{a + b = c + d}$\\
+	$\rightarrow{(c,d)R(a,b) \leftrightarrow{c + d = a + b}}$\\
+	$\rightarrow{\mbox{ R is symmetric }}$; (2)\\
+	For (a,b)R(b,f) $\leftrightarrow{a + b = b + f}$\\
+	$\rightarrow{a=f}$\\
+	$\rightarrow{\mbox{ R is transitive }}$; (3)\\
+	(1),(2),(3) $\rightarrow{\mbox{ R is an equivalent relation }}$\\
+	\item What is the equivalent class of $[\left\{1,3\right\}], [\left\{2,4\right\}], [\left\{1,1\right\}]$?\\
+	The equivalent class of $[\left\{1,3\right\}] is \left\{3,1\right\}, \left\{2,2\right\}$\\
+	The equivalnet class of $[\left\{2,4\right\}] is \left\{4,2\right\}, \left\{5,1\right\}, \left\{1,5\right\},\left\{3,3\right\}$\\
+	The equivalent class of $[\left\{1,1\right\}] is \left\{1,1\right\}$\\
+	\item Find the partition of set A formed by the equivalent classes of part b\\
+	$ \mbox{ The partition of set A is } \left\{3,1\right\}, \left\{4,2\right\}, \left\{1,5\rightarrow}$ 
+\end{itemize}
+\pagebreak
+\end{document}
+
+
+
+
+
+
+
