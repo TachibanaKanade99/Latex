@@ -75,9 +75,24 @@ $(a,b)R(c,d) \leftrightarrow{a + b = c + d}$
 	The equivalnet class of $[\left\{2,4\right\}] is \left\{4,2\right\}, \left\{5,1\right\}, \left\{1,5\right\},\left\{3,3\right\}$\\
 	The equivalent class of $[\left\{1,1\right\}] is \left\{1,1\right\}$\\
 	\item Find the partition of set A formed by the equivalent classes of part b\\
-	$ \mbox{ The partition of set A is } \left\{3,1\right\}, \left\{4,2\right\}, \left\{1,5\rightarrow}$ 
+	$ \mbox{ The partition of set A is } \left\{3,1\right\}, \left\{4,2\right\}, \left\{1,5\right\}$ 
 \end{itemize}
 \pagebreak
+\problem [10pts]
+\begin{itemize}
+	\item Let R be a relation on a set A. Then R is the transitive iff $R \circ R$ is a subset of R\\
+	we have $(x,y) \in R \mbox{ and } (y,z) \in R$\\
+	we have: $(x,z) \in R \circ R,\exists y \in A(x,y) \in R \cap (y,z) \in R$\\
+	R is the relation to set A so $y \in R$\\
+	so $(x,y)R \circ R(y,z) = R(x,z)$
+	$\rightarrow{Q.E.D}$
+	\item Suppose that R is the relation on the set A which is reflexive and transitive. Then $R \circ R = R$\\
+	Suppose that R is reflexive so $aRa \circ bRb$ is reflexive
+	$\rightarrow{R \circ R = R }$\\
+	Suppose that R is transitive then $(a,b)R(b,c) \circ (a,b)R(b,c) = (a,c)R^2$\\
+	$\rightarrow{(a,c) \in R \mbox{ because } (a,c) \in R^2}$\\
+	$\therefore{Q.E.D}$
+\end{itemize}	
 \end{document}
 
 
