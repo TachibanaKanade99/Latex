@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+\usepackage{pictex,amsmath,amssymb,amsbsy,amsfonts,amsthm,verbatim}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{algorithm,algorithmic}
+\usepackage{multirow}
+\usepackage{tikz}
+
+\setlength{\voffset}{-0.25in}
+\setlength{\headsep}{+0.25in}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\newcounter{exercise}
+\newcommand{\exercise}{\textbf{\refstepcounter{exercise}Exercise \theexercise :}}
+
+\def\vu{\mathbf{u}}
+\def\vs{\mathbf{s}}
+\def\vb{\mathbf{b}}
+\def\vv{\mathbf{v}}
+\def\vw{\mathbf{w}}
+
+\renewcommand{\implies}{\rightarrow}
+\renewcommand{\lor}{\vee}
+\renewcommand{\land}{wedge}
+\renewcommand{\iff}{\leffrightarrow}
+\newcommand{\xor}{\oplus}
+\newcommand{\TRUE}{\mathbf{T}}
+\newcommand{\FALSE}{\mathbf{F}}
+\newcommand{\universe}{\mathcal{U}}
+
+\begin{document}
+\exercise Draw the straight line horizontal\\
+\begin{tikzpicture}
+\draw (-1.5,0) -- (1.5,0);
+//Draw the straight line vertical
+\draw (0,-1.5) -- (0,1.5);
+//Straight path contruction
+\draw (-1.5,0) -- (1.5,0) -- (0,-1.5) -- (0,1.5);
+\end{tikzpicture}
+\bigbreak
+\exercise Curved path construction\\
+\\	
+\begin{tikzpicture}
+\filldraw  [gray] (0,0) circle (2pt)
+				  (1,1) circle (2pt) 
+				  (2,1) circle (2pt) 
+				  (2,0) circle (2pt); 
+\draw  (0,0) .. controls  (1,1) and (2,1) .. (2,0);
+\end{tikzpicture}
+\bigbreak
+\exercise Draw the graph.\\
+\begin{tikzpicture}
+\filldraw [black]
+ 		(0,0) circle (2pt) node[below] {a}   
+        (2,0) circle (2pt) node[below] {b}
+        (0,2) circle (2pt) node[above] {c}
+        (2,2) circle (2pt) node[above] {d};
+\draw (0,0) -- (2,0);
+\draw (0,0) -- (0,2);
+\draw (2,0) -- (0,2);
+\draw (2,2) -- (2,0);
+\draw (0,2) -- (2,2);
+\end{tikzpicture}
+\end{document}
