@@ -401,7 +401,7 @@ Because the number of edges e is not an integer, then the graph does not exist.
 	 \draw[selected edge] (v11) -- (v10);
 	 \draw[selected edge] (v10) -- (v8);
 	 \draw[selected edge] (v8) -- (v0);
- \end{tikzpicture} 	
+ 	\end{tikzpicture} 	
 \end{itemize}
 \exercise How many edges does a graph have if it has vertices of degree 4,3,3,2,2? Draw such a graph\\
 \begin{center}
@@ -409,7 +409,7 @@ $\displaystyle \sum_{v \in V} deg(v) = 4+3+3+2+2 =14$
 \end{center}
  is an even integer, therefore exist graph with 7 edges.\\
  \bigbreak
- \begin{tikzpicture}[node distance=2cm]
+ 	\begin{tikzpicture}[node distance=2cm]
 	\tikzstyle{edge} = [draw=black, line width=2]
 	\filldraw [black]
 			(0,0) circle (3pt)
@@ -426,4 +426,22 @@ $\displaystyle \sum_{v \in V} deg(v) = 4+3+3+2+2 =14$
 	\draw (e) -- (d) -- (c) -- (b);
 	\draw (b) -- (d);
 	\end{tikzpicture}
+	\bigbreak
+\exercise b) Draw an directed graph represented by the given adjacency matrix.\\
+\bigbreak
+    \begin{tikzpicture}[node distance=2cm]
+	\tikzstyle{edge} = [draw=black, line width=2]
+	\filldraw [black]
+			(0,0) circle (3pt)
+			(2,2) circle (3pt)
+			(4,-1) circle (3pt);
+		\node[] (a) at (0,0)  [label=below:$a$] {};
+        \node[] (b) at (2,2) [label=above:$b$] {};
+		\node[] (c) at (4,-1)  [label=below:$c$] {};
+	\path [->] (a) edge node {1} (c)
+		  [->] (c) edge node {2} (b)
+		       (a) edge node {2} (b)
+		       (a) edge[loop left] node {1} (a)
+		       (c) edge[loop right] node {2} (c);
+	\end{tikzpicture}     	
 \end{document}
